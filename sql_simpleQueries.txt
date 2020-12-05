@@ -1,0 +1,11 @@
+SELECT last_name FROM customer WHERE customer_adress LIKE 'B-Street 1-1';
+
+SELECT AVG(product.product_stock) FROM product;
+
+SELECT shipping.shipping_name, shipping.shipping_delivery_date, shipping.fk_customer_id FROM shipping;
+
+SELECT product_name, company_name FROM product INNER JOIN company on fk_company_id = company_id;
+
+SELECT product_name, company_name FROM product LEFT JOIN company ON fk_company_id = company_id;
+
+SELECT * FROM `shipping` WHERE fk_customer_id;
